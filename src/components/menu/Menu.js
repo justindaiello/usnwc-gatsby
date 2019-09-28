@@ -1,11 +1,18 @@
 import React from 'react';
-import StyledMenu from './MenuStyles';
+import { StyledMenu, StyledLink, CloseButton, StyledNav } from './MenuStyles';
 
 const Menu = props => (
   <StyledMenu open={props.active}>
-    <p style={{ color: 'black' }} onClick={() => props.toggleMenu()}>
-      HELLO
-    </p>
+    <header>
+      <CloseButton title="close" onClick={props.toggleMenu}>
+        &times;
+      </CloseButton>
+    </header>
+    <StyledNav>
+      <StyledLink to="/">About</StyledLink>
+      <StyledLink to="/">Visit</StyledLink>
+      <StyledLink to="/">Contact</StyledLink>
+    </StyledNav>
   </StyledMenu>
 );
 

@@ -29,6 +29,8 @@ const StyledLink = styled(Link)`
   font-family: 'Droid Sans';
   color: #393939;
   padding: 0rem 3rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -43,7 +45,7 @@ const StyledLink = styled(Link)`
   }
   &:after {
     height: 2px;
-    background: black;
+    background: #d0224a;
     content: '';
     width: 0;
     position: absolute;
@@ -63,9 +65,6 @@ const StyledLink = styled(Link)`
       width: calc(100% - 60px);
     }
   }
-  padding: 0rem 3rem;
-  text-transform: uppercase;
-  font-size: 2.5rem;
 `;
 
 const StyledNav = styled.ul`
@@ -78,6 +77,10 @@ const StyledNav = styled.ul`
   .menu-icon {
     margin-right: 2rem;
     font-size: 4rem;
+    cursor: pointer;
+    &:hover {
+      color: #d0224a;
+    }
     @media (min-width: 850px) {
       display: none;
     }

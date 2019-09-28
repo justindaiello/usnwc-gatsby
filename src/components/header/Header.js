@@ -23,9 +23,7 @@ const Header = () => {
           <StyledLink to="/">Visit</StyledLink>
           <StyledLink to="/">About</StyledLink>
           <StyledLink to="/">Contact</StyledLink>
-          <div className="menu-icon">
-            <MdMenu onClick={() => toggleMenu()} />
-          </div>
+          <MdMenu onClick={() => toggleMenu()} className="menu-icon" />
         </StyledNav>
       </div>
       <Menu toggleMenu={toggleMenu} active={menuActive} />
