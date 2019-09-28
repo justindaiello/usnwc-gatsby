@@ -41,7 +41,6 @@ const StyledNav = styled.ul`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  font-family: 'Droid Sans';
   color: #393939;
   display: flex;
   align-items: center;

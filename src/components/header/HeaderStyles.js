@@ -26,7 +26,6 @@ const StyledLink = styled(Link)`
     display: none;
   }
   text-decoration: none;
-  font-family: 'Droid Sans';
   color: #393939;
   padding: 0rem 3rem;
   text-transform: uppercase;
