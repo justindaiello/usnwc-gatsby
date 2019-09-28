@@ -8,25 +8,25 @@ const StyledHeader = styled.header`
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
   }
   .logo {
+    object-fit: cover;
     max-width: 50%;
-    padding-left: 2rem;
+    position: relative;
+    margin-left: 2rem;
+    @media (max-width: 500px) {
+      max-width: 75%;
+    }
   }
-`;
-
-const Logo = styled.h1`
-  font-size: 3rem;
-  font-weight: 600;
-  margin-left: 2rem;
-  position: relative;
-  color: black;
-  text-decoration: none;
 `;
 
 const StyledLink = styled(Link)`
+  @media (max-width: 850px) {
+    display: none;
+  }
   text-decoration: none;
+  font-family: 'Droid Sans';
   color: #393939;
   padding: 0rem 3rem;
   display: flex;
@@ -75,6 +75,13 @@ const StyledNav = styled.ul`
   justify-self: end;
   font-size: 2rem;
   align-items: center;
+  .menu-icon {
+    margin-right: 2rem;
+    font-size: 4rem;
+    @media (min-width: 850px) {
+      display: none;
+    }
+  }
 `;
 
-export { StyledHeader, Logo, StyledLink, StyledNav };
+export { StyledHeader, StyledLink, StyledNav };
