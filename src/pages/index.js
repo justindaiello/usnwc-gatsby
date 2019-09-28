@@ -1,3 +1,9 @@
-import React from "react"
+import React from 'react';
+import PrimaryLayout from '../layouts/PrimaryLayout';
+import styled from 'styled-components';
 
-export default () => <div>Hello world!</div>
+const AppWrapper = styled.div`
+  background-color: red;
+`;
+
+export default () => <AppWrapper>Hello world!</AppWrapper>;

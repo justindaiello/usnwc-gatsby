@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  siteMetaData: {
+  siteMetadata: {
     title: 'USNWC Gatsby Site',
   },
   plugins: [
@@ -29,6 +29,12 @@ module.exports = {
         gfm: true,
         // Plugins configs
         plugins: [],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
       },
     },
   ],
