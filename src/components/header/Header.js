@@ -20,7 +20,7 @@ const Header = () => {
           <img src={logo} alt="Logo" className="logo" />
         </Link>
         <StyledNav>
-          <StyledLink to="/">Visit</StyledLink>
+          <StyledLink to="/visit">Visit</StyledLink>
           <StyledLink to="/">About</StyledLink>
           <StyledLink to="/">Contact</StyledLink>
           <MdMenu onClick={() => toggleMenu()} className="menu-icon" />

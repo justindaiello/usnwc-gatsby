@@ -7,7 +7,7 @@ const LandingPageStyles = () => (
     <div>
       <p>Play | Relax | Learn</p>
     </div>
-    <img src={landingPhoto} alt="home-page-rafting-photo" />
+    <img src={landingPhoto} alt="home-page-rafting" />
   </LandingImageStyles>
 );
 
