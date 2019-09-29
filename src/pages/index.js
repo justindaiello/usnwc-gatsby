@@ -1,3 +1,11 @@
-import React from "react"
+import React from 'react';
+import PrimaryLayout from '../layouts/PrimaryLayout';
+import LandingPage from '../components/landing/LandingPage';
 
-export default () => <div>Hello world!</div>
+export default () => {
+  return (
+    <PrimaryLayout>
+      <LandingPage />
+    </PrimaryLayout>
+  );
+};
