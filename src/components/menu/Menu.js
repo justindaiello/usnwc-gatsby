@@ -10,7 +10,7 @@ const Menu = props => (
     </header>
     <StyledNav>
       <StyledLink to="/">About</StyledLink>
-      <StyledLink to="/">Visit</StyledLink>
+      <StyledLink to="/visit">Visit</StyledLink>
       <StyledLink to="/">Contact</StyledLink>
     </StyledNav>
   </StyledMenu>

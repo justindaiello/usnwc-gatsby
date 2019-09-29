@@ -1,15 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PrimaryLayout from '../layouts/PrimaryLayout';
+import Visit from '../components/visit/Visit';
 
 const visit = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
     <PrimaryLayout>
-      {console.log('Data', data)}
-      <p>{frontmatter.title}</p>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <Visit title={frontmatter.title} html={html} />
     </PrimaryLayout>
   );
 };
