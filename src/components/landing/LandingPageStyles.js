@@ -6,7 +6,7 @@ const LandingImageStyles = styled.div`
   left: 0;
   img {
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     object-fit: cover;
   }
   div {
