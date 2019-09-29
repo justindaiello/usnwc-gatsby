@@ -12,15 +12,6 @@ const visit = ({ data }) => {
       {console.log('DATA,', data)}
       <Visit title={frontmatter.title} html={html} />
       <ImageGallery data={data.allFile.edges} />
-      {/* {data.allFile.edges.map(image => {
-        return (
-          <Img
-            fluid={image.node.childImageSharp.fluid}
-            alt="photo"
-            key={image.node.childImageSharp.fluid.src}
-          />
-        );
-      })} */}
     </PrimaryLayout>
   );
 };

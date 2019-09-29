@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const LandingImageStyles = styled.div`
   margin: 0;
+  height: 100vh;
   max-width: 100% !important;
   left: 0;
   img {
