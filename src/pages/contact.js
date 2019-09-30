@@ -1,35 +1,37 @@
 import React from 'react';
-import PrimaryLayout from '../layouts/PrimaryLayout';
 import { graphql } from 'gatsby';
-import About from '../components/about/About';
+import PrimaryLayout from '../layouts/PrimaryLayout';
+import Contact from '../components/contact/Contact';
 
-const about = ({ data }) => {
-  const { markdownRemark } = data;
-  const { html } = markdownRemark;
+const contact = ({ data }) => {
+  const { allFile } = data;
+  const { edges } = allFile;
   return (
     <PrimaryLayout>
-      <About data={data.allFile.edges} html={html} />
+      <Contact data={edges} />
     </PrimaryLayout>
   );
 };
 
+export default contact;
+
 export const query = graphql`
   query {
-    markdownRemark(id: { eq: "99f98f06-2e95-521f-9c71-67efa303bbd3" }) {
-      id
-      html
-    }
     allFile(
       filter: {
         extension: { regex: "/(jpg)/" }
         relativeDirectory: { eq: "posts" }
       }
+      limit: 3
     ) {
       edges {
         node {
+          relativeDirectory
           name
+          id
+          relativePath
           childImageSharp {
-            fluid(maxWidth: 1500, quality: 100) {
+            fluid(maxWidth: 500, quality: 100) {
               ...GatsbyImageSharpFluid
               src
             }
@@ -39,5 +41,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default about;

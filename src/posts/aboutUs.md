@@ -32,3 +32,5 @@ The River’s Edge, Pump House Biergarten, Adventure Dining opportunities, as we
 The Whitewater Center utilizes various adventure sports and natural environments onsite and throughout the region to develop leadership and communication skills. Skill development programs include specialized instruction and certification, summer camps for children and teenagers, and customizable team development courses for groups and schools, testing the mental and physical limits of participants in the wilderness.
 
 Learning opportunities are available to individuals, families, and groups of all ages and skill levels.
+
+`video: https://www.youtube.com/embed/yUvd59vCAYE`

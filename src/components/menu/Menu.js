@@ -11,7 +11,7 @@ const Menu = props => (
     <StyledNav>
       <StyledLink to="/about">About</StyledLink>
       <StyledLink to="/visit">Visit</StyledLink>
-      <StyledLink to="/">Contact</StyledLink>
+      <StyledLink to="/contact">Contact</StyledLink>
     </StyledNav>
   </StyledMenu>
 );
