@@ -12,6 +12,7 @@ import {
   FaBed,
   FaHamburger,
   FaClock,
+  FaQuestion,
 } from 'react-icons/fa';
 
 const Visit = props => {
@@ -42,6 +43,10 @@ const Visit = props => {
         <li>
           <FaClock className="icon" />
           <StyledLink to="/visit">Hours</StyledLink>
+        </li>
+        <li>
+          <FaQuestion className="icon" />
+          <StyledLink to="/visit">FAQs</StyledLink>
         </li>
       </StyledList>
     </StyledContainer>

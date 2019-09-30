@@ -9,7 +9,7 @@ const Menu = props => (
       </CloseButton>
     </header>
     <StyledNav>
-      <StyledLink to="/">About</StyledLink>
+      <StyledLink to="/about">About</StyledLink>
       <StyledLink to="/visit">Visit</StyledLink>
       <StyledLink to="/">Contact</StyledLink>
     </StyledNav>

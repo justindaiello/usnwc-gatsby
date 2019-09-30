@@ -6,11 +6,11 @@ import ImageGallery from '../components/imageGallery/ImageGallery';
 
 const visit = ({ data }) => {
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { html } = markdownRemark;
   return (
     <PrimaryLayout>
       {console.log('DATA,', data)}
-      <Visit title={frontmatter.title} html={html} />
+      <Visit html={html} />
       <ImageGallery data={data.allFile.edges} />
     </PrimaryLayout>
   );
@@ -21,9 +21,6 @@ export const query = graphql`
     markdownRemark(id: { eq: "dec85648-cd37-519a-9955-9c05fa02083a" }) {
       id
       html
-      frontmatter {
-        title
-      }
     }
     allFile(
       filter: {
