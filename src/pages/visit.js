@@ -9,7 +9,6 @@ const visit = ({ data }) => {
   const { html } = markdownRemark;
   return (
     <PrimaryLayout>
-      {console.log('DATA,', data)}
       <Visit html={html} />
       <ImageGallery data={data.allFile.edges} />
     </PrimaryLayout>

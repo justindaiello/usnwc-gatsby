@@ -10,7 +10,6 @@ const Header = () => {
 
   const toggleMenu = () => {
     setMenuActive(!menuActive);
-    console.log(menuActive);
   };
 
   return (
