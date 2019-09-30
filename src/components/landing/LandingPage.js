@@ -1,13 +1,23 @@
 import React from 'react';
 import LandingImageStyles from './LandingPageStyles';
 import landingPhoto from '../../../static/images/rafting.jpg';
+import Img from 'gatsby-image';
 
-const LandingPageStyles = () => (
+const LandingPageStyles = ({ data }) => (
   <LandingImageStyles>
     <div>
       <p>Play | Relax | Learn</p>
     </div>
-    <img src={landingPhoto} alt="home-page-rafting" />
+    {data.map(image => {
+      return (
+        <Img
+          fluid={image.node.childImageSharp.fluid}
+          alt="photo"
+          key={image.node.childImageSharp.fluid.src}
+          className="landing-image"
+        />
+      );
+    })}
   </LandingImageStyles>
 );
 

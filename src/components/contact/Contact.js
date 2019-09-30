@@ -66,7 +66,7 @@ const Contact = ({ data }) => {
               fluid={image.node.childImageSharp.fluid}
               alt="photo"
               key={image.node.childImageSharp.fluid.src}
-              className="header-images"
+              className="footer-images"
             />
           );
         })}

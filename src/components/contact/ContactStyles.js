@@ -13,6 +13,9 @@ const StyledContainer = styled.div`
     height: 200px;
     width: 100%;
   }
+  .footer-images {
+    height: 400px;
+  }
 `;
 
 const StyledForm = styled.form`

@@ -1,11 +1,41 @@
 import React from 'react';
 import PrimaryLayout from '../layouts/PrimaryLayout';
 import LandingPage from '../components/landing/LandingPage';
+import { graphql } from 'gatsby';
 
-export default () => {
+export default ({ data }) => {
+  const { allFile } = data;
+  const { edges } = allFile;
   return (
     <PrimaryLayout>
-      <LandingPage />
+      <LandingPage data={edges} />
     </PrimaryLayout>
   );
 };
+
+export const query = graphql`
+  query {
+    allFile(
+      filter: {
+        extension: { regex: "/(jpg)/" }
+        relativeDirectory: { eq: "posts" }
+        name: { eq: "rafting" }
+      }
+    ) {
+      edges {
+        node {
+          relativeDirectory
+          name
+          id
+          relativePath
+          childImageSharp {
+            fluid(maxWidth: 1600, quality: 100) {
+              ...GatsbyImageSharpFluid
+              src
+            }
+          }
+        }
+      }
+    }
+  }
+`;

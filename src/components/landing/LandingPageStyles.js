@@ -5,10 +5,11 @@ const LandingImageStyles = styled.div`
   height: 100vh;
   max-width: 100% !important;
   left: 0;
-  img {
+  .landing-image {
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    z-index: -1;
   }
   div {
     position: absolute;
@@ -18,6 +19,7 @@ const LandingImageStyles = styled.div`
     display: flex;
     p {
       color: white;
+      z-index: 999;
       font-size: 5rem;
       word-spacing: 1rem;
       text-transform: uppercase;
