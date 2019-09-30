@@ -1,24 +1,21 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import PrimaryLayout from '../layouts/PrimaryLayout';
-import Visit from '../components/visit/Visit';
-import ImageGallery from '../components/imageGallery/ImageGallery';
+import { graphql } from 'gatsby';
+import About from '../components/about/About';
 
-const visit = ({ data }) => {
+const about = ({ data }) => {
   const { markdownRemark } = data;
   const { html } = markdownRemark;
   return (
     <PrimaryLayout>
-      {console.log('DATA,', data)}
-      <Visit html={html} />
-      <ImageGallery data={data.allFile.edges} />
+      <About data={data.allFile.edges} html={html} />
     </PrimaryLayout>
   );
 };
 
 export const query = graphql`
   query {
-    markdownRemark(id: { eq: "dec85648-cd37-519a-9955-9c05fa02083a" }) {
+    markdownRemark(id: { eq: "99f98f06-2e95-521f-9c71-67efa303bbd3" }) {
       id
       html
     }
@@ -30,11 +27,9 @@ export const query = graphql`
     ) {
       edges {
         node {
-          relativeDirectory
           name
-          relativePath
           childImageSharp {
-            fluid(maxWidth: 500, quality: 100) {
+            fluid(maxWidth: 1500, quality: 100) {
               ...GatsbyImageSharpFluid
               src
             }
@@ -45,4 +40,4 @@ export const query = graphql`
   }
 `;
 
-export default visit;
+export default about;

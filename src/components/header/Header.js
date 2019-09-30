@@ -21,8 +21,8 @@ const Header = () => {
         </Link>
         <StyledNav>
           <StyledLink to="/visit">Visit</StyledLink>
-          <StyledLink to="/">About</StyledLink>
-          <StyledLink to="/">Contact</StyledLink>
+          <StyledLink to="/about">About</StyledLink>
+          <StyledLink to="/contact">Contact</StyledLink>
           <MdMenu onClick={() => toggleMenu()} className="menu-icon" />
         </StyledNav>
       </div>

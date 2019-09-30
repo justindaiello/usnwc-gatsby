@@ -1,8 +1,8 @@
 ---
 path: './posts/visitPage'
-title: Testing the Title
+title: 'Testing the Title'
 date: '2019-9-28'
-keywords: 'visit, water'
+keywords: 'visit, whitewater'
 ---
 
 # Play | Relax | Learn
