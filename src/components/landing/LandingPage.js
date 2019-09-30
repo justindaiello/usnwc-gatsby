@@ -1,6 +1,5 @@
 import React from 'react';
 import LandingImageStyles from './LandingPageStyles';
-import landingPhoto from '../../../static/images/rafting.jpg';
 import Img from 'gatsby-image';
 
 const LandingPageStyles = ({ data }) => (
